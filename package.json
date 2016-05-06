@@ -1,6 +1,6 @@
 {
   "name": "grunt-css-analysis",
-  "version": "0.0.0-beta.1",
+  "version": "0.0.1",
   "description": "Run analyzecss against css files",
   "author": {
     "name": "Stuart Campbell",
@@ -23,7 +23,7 @@
   "readmeFilename": "readme.md",
   "dependencies": {
     "analyze-css": "^0.12.0",
-    "violation-reporter": "0.0.0-beta.1"
+    "violation-reporter": "0.0.1"
   },
   "devDependencies": {
     "grunt": ">=0.4.x",
