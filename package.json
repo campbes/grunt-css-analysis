@@ -1,0 +1,38 @@
+{
+  "name": "grunt-css-analysis",
+  "version": "0.0.0-beta.1",
+  "description": "Run analyzecss against css files",
+  "author": {
+    "name": "Stuart Campbell",
+    "url": "https://github.com/campbes"
+  },
+  "main": "tasks/grunt-css-analysis.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/campbes/grunt-css-analysis"
+  },
+  "bugs": {
+    "url": "https://github.com/campbes/grunt-css-analysis/issues"
+  },
+  "licences": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "readmeFilename": "readme.md",
+  "dependencies": {
+    "analyze-css": "^0.12.0",
+    "violation-reporter": "0.0.0-beta.1"
+  },
+  "devDependencies": {
+    "grunt": ">=0.4.x",
+    "grunt-contrib-jshint": "^0.11.2"
+  },
+  "keywords": [
+    "gruntplugin",
+    "complexity",
+    "halstead",
+    "cyclomatic"
+  ]
+}
