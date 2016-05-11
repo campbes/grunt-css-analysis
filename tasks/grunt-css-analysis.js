@@ -6,7 +6,7 @@ module.exports = function(grunt) {
   var MultiReporter = require('violation-reporter')(grunt);
   var XMLReporter = require('violation-reporter/tasks/XML')(grunt);
   var pmdReporter = require('violation-reporter/tasks/PmdXML')(grunt, XMLReporter);
-  var checkstyleReporter = require('violation-reporter/tasks/checkstyleXML')(grunt, XMLReporter);
+  var checkstyleReporter = require('violation-reporter/tasks/CheckstyleXML')(grunt, XMLReporter);
   var consoleReporter = require('violation-reporter/tasks/Console')(grunt);
 
   var defaults = {

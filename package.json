@@ -1,6 +1,6 @@
 {
   "name": "grunt-css-analysis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Run analyzecss against css files",
   "author": {
     "name": "Stuart Campbell",
