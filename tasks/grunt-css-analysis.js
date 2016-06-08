@@ -8,6 +8,7 @@ module.exports = function(grunt) {
   var pmdReporter = require('violation-reporter/tasks/PmdXML')(grunt, XMLReporter);
   var checkstyleReporter = require('violation-reporter/tasks/CheckstyleXML')(grunt, XMLReporter);
   var consoleReporter = require('violation-reporter/tasks/Console')(grunt);
+  var dotsReporter = require('violation-reporter/tasks/Dots')(grunt);
 
   var defaults = {
     fail: true,
@@ -56,12 +57,16 @@ module.exports = function(grunt) {
       "length": 100000,
       "rules": 100,
       "declarations": 1000
-    }
+    },
+    name: 'CSS Analysis Violations'
   };
 
   function getReporter(files, options) {
     var reporter = new MultiReporter(files, options);
-    reporter.addReporter(consoleReporter);
+    reporter.addReporter(dotsReporter);
+    if (options.console) {
+      reporter.addReporter(consoleReporter);
+    }
     if (options.pmdXML) {
       reporter.addReporter(pmdReporter);
     }
